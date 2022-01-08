@@ -1,0 +1,123 @@
+:root {
+    --primary-color:#0c2461 ;
+    --secondary-color:#5352ed;
+    --Tertiary-color: #ff6b81;
+}
+
+/* Set up the margin and the padding size */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Appying a style to the body */
+
+body {
+    color: var(--primary-color);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Applying styles to the Header */
+
+header {
+    padding: 10px 0 20px 0;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    color: white;
+}
+
+header p {
+    font-weight: lighter;
+    font-size: 10px;
+    
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--Tertiary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color:var(--Tertiary-color);
+}
+
+header nav{
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw; 
+    text-shadow: 0 0 10px rgba(0 , 0 , 0 , 0.5);
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+/* working on the footer */
+
+Footer{
+    background: var(--primary-color);
+    width: 100%;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+Footer h2 {
+    color:var(--Tertiary-color);
+    font-size: 15px;
+    margin: 0;
+}
+
+section {
+    padding: 60px;
+}
+
+/* working on my favorite section */
+.favorite {
+    background: black;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-position: center;
+    align-items: center;
+}
+.favorite-img {
+    align-items: left ;
+    margin: 0;  
+    flex: 1 12%;
+    }
+
+.favorite-say {
+    text-align: right;
+    color: var(--Tertiary-color);
+       
+}
