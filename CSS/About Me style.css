@@ -17,12 +17,13 @@
 body {
     color: var(--primary-color);
     font-family: 'Times New Roman', Times, serif;
+    background-color: white;
 }
 
 /* Applying styles to the Header */
 
 header {
-    padding: 10px 0 20px 0;
+    padding: 10px  20px;
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
@@ -53,6 +54,8 @@ header a {
 
 header nav{
     margin: 7px 0;
+    text-decoration: underline;
+    float: right;
 }
 
 header nav ul {
@@ -96,28 +99,170 @@ Footer h2 {
     margin: 0;
 }
 
-section {
-    padding: 60px;
-}
 
 /* working on my favorite section */
 .favorite {
     background: black;
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-position: center;
-    align-items: center;
+    padding: 70px;
 }
-.favorite-img {
-    align-items: left ;
-    margin: 0;  
-    flex: 1 12%;
-    }
 
 .favorite-say {
     text-align: right;
     color: var(--Tertiary-color);
-       
+    right: -500px;
+    display: inline;
+    margin: auto;
+}
+
+/* Doing the about me section */
+
+.About {
+    display: inline;
+    width: 28%;
+    padding: 30px 10px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 15px 1px rgba( 37, 73, 214, 0.18);
+}
+
+.About h2{
+    font-size: 40px;
+    color: var(--Tertiary-color);
+    text-align: left;
+    border-right: var(--primary-color) solid ;
+    writing-mode: vertical-rl;
+    float:left;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.About p {
+    padding: 30px;
+    display: block;
+    position: absolute;
+    right: 400px;
+    width: 900px;
+
+}
+
+.About img{
+    max-width: 15%;
+    margin: 5px;
+    float: right;
+    padding-top: 20px;
+}
+
+/* Start of the work projects */
+.projects{
+    display: inline-flexbox;
+    margin-bottom: 5px;
+    margin-left: auto;
+    
+}
+.projects img {
+    width: 30%;
+    padding: 4px;
+    border: var(--primary-color) solid 10px;
+}
+
+.projects iframe {
+    width: 30%;
+    padding: 9px;
+    border: var(--primary-color) solid 10px;
+}
+
+.projects-run h2 {
+    font-size: 60px;
+    color: var(--Tertiary-color);
+    text-align: left;
+    border-right: var(--primary-color) solid;
+    writing-mode: vertical-rl;
+    margin-top: 300px;
+}
+
+.projects-run a img{
+    width: 70%;
+    padding: 9px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 9px;
+    display:block;
+    border: var(--primary-color) solid 10px;
+}
+
+.contact img {
+    margin: 5% 0 5% 2%;
+    width: 5%;
+    display: inline;
+    float: right;
+}
+
+.contact h3 {
+    font-size: 60px;
+    color: var(--Tertiary-color);
+    text-align: left;
+    border-right: var(--primary-color) solid;
+    writing-mode: vertical-rl;
+}
+
+
+/* Media Query for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+      width: 100%;
+      text-align: center;  
+    }
+
+    header nav ul{
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+/* Media Query for tablets and smaller */
+@media screen and (max-width: 768px) {
+    
+}
+
+/* Media Query for Mobile phones and smaller */
+@media screen and (max-width: 575px){
+    .section-title {
+        width: 95%;
+    }
+
+    .intro p {
+        width: 100%;
+    }
+
+    .trainer{
+        flex: 0 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-info > * {
+        flex: 0 100%;
+    }
+
+    .contact-form {
+        order: 3
+    }
+    
 }
